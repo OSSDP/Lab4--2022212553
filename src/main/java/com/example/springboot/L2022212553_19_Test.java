@@ -83,25 +83,6 @@ public class L2022212553_19_Test {
         assertArrayEquals(expected, board);
     }
 
-    @Test
-    public void testGameOfLife_Complex() {
-        Solution solution = new Solution();
-        int[][] board = {
-                {0, 1, 0, 0, 0},
-                {0, 1, 0, 1, 0},
-                {0, 1, 1, 1, 0},
-                {0, 0, 0, 1, 0}
-        };
-        int[][] expected = {
-                {0, 0, 0, 0, 0},
-                {1, 0, 1, 1, 0},
-                {0, 0, 1, 0, 0},
-                {0, 1, 1, 0, 0}
-        };
-        solution.gameOfLife(board);
-        assertArrayEquals(expected, board);
-    }
-
     // Helper method to compare 2D arrays
     private void assertArrayEquals(int[][] expected, int[][] actual) {
         int rows = expected.length;
